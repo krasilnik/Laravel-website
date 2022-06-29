@@ -1,0 +1,442 @@
+.body-container {
+}
+
+.header {
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-weight: 100;
+    font-size: 50px;
+    margin-left: 60px;
+}
+
+.page-navbar {
+    margin-right: 60px;
+}
+
+.page-navbar > ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.page-navbar > ul > li {
+    float: left;
+}
+
+.page-navbar > ul > li > a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+    color: black;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.page-navbar > ul > li > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.page-navbar > ul > li > a:hover::before {
+    transform: scaleX(1);
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+}
+
+.breadcrumbs {
+    display: flex;
+    padding: 24px;
+    color: #949494;
+    font-weight: 100;
+}
+
+.breadcrumbs > i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.breadcrumbs > i:hover {
+    cursor: pointer;
+}
+
+.bi-house::before {
+    margin-right: 5px;
+}
+
+.content-navbar {
+    border: 1px dashed black;
+    padding: 32px;
+    border-right: 0;
+    border-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-navbar > ul {
+    list-style-type: none;
+}
+
+.content-navbar > ul > li {
+    float: left;
+    margin-right: 48px;
+}
+
+.content-navbar > ul > li > a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.content-navbar > ul > li > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.restaurants {
+    margin-top: 80px;
+}
+
+.restaurant-1 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-1.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-2 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-2.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-3 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-3.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-4 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-4.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-5 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-5.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-6 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-6.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-7 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-7.fif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-8 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-8.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-9 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-9.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-10 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-10.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+.restaurant-11 {
+    width: 100%;
+    height: 286px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 25px;
+    background: url("/img/rest-11.jfif") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+
+.restaurant-active {
+    margin-top: 25px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.restaurant-active-card {
+    width: 40%;
+    height: 340px;
+    float: left;
+    background: url("/img/kyiv.svg") no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
+
+.restaurant-active-description {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-active-description > p {
+    width: 80%;
+    font-size: 18px;
+}
+
+.restaurant-name-1 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-2 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-3 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-4 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-5 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-6 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-7 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-8 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-9 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-10 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+.restaurant-name-11 {
+    color: white;
+    width: 50%;
+    font-size: 24px;
+}
+
+.content-navbar > ul > li > a:hover::before {
+    transform: scaleX(1);
+}
+
+.pagination-container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.restaurant-pagination {
+    display: flex;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+}
+
+.restaurant-pagination > .page {
+    margin-right: 8px;
+}
+
+.restaurant-pagination > .page-transition {
+    margin-right: 8px;
+}
+
+.restaurant-pagination > .page:last-child {
+    margin-right: 8px;
+}
+
+.footer {
+    width: 100vw;
+    margin: 70px 0;
+    border: 1px black solid;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+    padding: 80px 0;
+    font-weight: 100;
+}
+
+.links {
+    align-self: flex-end;
+}
+
+.links > ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.links > ul > li:first-child {
+    font-size: 24px;
+}
+
+.links > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.links > ul > li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-header {
+    text-align: center;
+}
+
+.footer-header > .main {
+    font-size: 52px;
+    margin-bottom: 8px;
+}
+
+.footer-header > .content {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.contacts-header {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials > h1 {
+    margin-right: 15px;
+}
+
+.socials > h1:last-child {
+    margin-right: 0;
+}
+
+.product-mark {
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 100;
+}

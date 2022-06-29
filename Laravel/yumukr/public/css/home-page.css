@@ -1,0 +1,333 @@
+.body-container {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("/img/mainimg.jfif") no-repeat;
+    background-size: cover;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.navigation > ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul > li {
+    float: left;
+}
+
+.navigation > ul > li > a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+.navigation > ul > li > a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.navigation > ul > li > a:hover::before {
+    transform: scaleX(1);
+}
+
+.header-body {
+    align-self: center;
+}
+
+.header-body > p {
+    position: relative;
+    color: white;
+    font-size: 6vw;
+    font-weight: 100;
+}
+.header-body > p::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0.8);
+}
+
+.cities {
+    display: flex;
+    justify-content: center;
+}
+
+.cities-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px gray dashed;
+    width: 60%;
+    margin: 50px 0;
+}
+
+.city-block {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.city-block:last-child {
+    margin-bottom: 50px;
+}
+
+.city-banner-1 {
+    width: 380px;
+    height: 286px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    background: url("/img/kiev.jfif") no-repeat;
+    background-size: cover;
+}
+.city-banner-2 {
+    width: 380px;
+    height: 286px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    background: url("/img/odessa.jfif") no-repeat;
+    background-size: cover;
+}
+.city-banner-3 {
+    width: 380px;
+    height: 286px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    background: url("/img/kharkiv.png") no-repeat;
+    background-size: cover;
+}
+.city-banner-4 {
+    width: 380px;
+    height: 286px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    background: url("/img/lviv.jfif") no-repeat;
+    background-size: cover;
+}
+.city-banner-5 {
+    width: 380px;
+    height: 286px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    background: url("/img/karpati.jfif") no-repeat;
+    background-size: cover;
+}
+
+.city-banner-1 > p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+.city-banner-2 > p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+.city-banner-3 > p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+.city-banner-4 > p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+.city-banner-5 > p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.city-description {
+    flex: 1;
+}
+
+.about-us {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("/img/aboutus.jfif") no-repeat;
+    background-size: cover;
+}
+
+.about-body {
+    width: 50%;
+    text-align: center;
+}
+
+.about-header {
+    font-size: 72px;
+    margin-bottom: 30px;
+}
+
+.content {
+    font-size: 24px;
+    margin-bottom: 31px;
+}
+
+.question {
+    position: relative;
+    margin: 0 20px;
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.question::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0.8);
+}
+
+.footer {
+    width: 100vw;
+    margin: 70px 0;
+    border: 1px black solid;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 280px;
+    padding: 80px 0;
+    font-weight: 100;
+}
+
+.links {
+    align-self: flex-end;
+}
+
+.links > ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+.links > ul > li:first-child {
+    font-size: 24px;
+}
+
+.links > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+.links > ul > li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.links > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-header {
+    text-align: center;
+}
+
+.footer-header > .main {
+    font-size: 52px;
+    margin-bottom: 8px;
+}
+
+.footer-header > .content {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.contacts-header {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials > h1 {
+    margin-right: 15px;
+}
+
+.socials > h1:last-child {
+    margin-right: 0;
+}
+
+.product-mark {
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .city-block {
+        flex-direction: column;
+    }
+
+    .city-banner {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
