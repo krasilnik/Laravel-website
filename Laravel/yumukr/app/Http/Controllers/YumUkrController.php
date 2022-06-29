@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use App\Models\Database;
+use App\Models\DataBase;
+
 
 class YumUkrController extends Controller {
 
@@ -20,13 +21,9 @@ class YumUkrController extends Controller {
         
     }
     public function showRestaurant() {
-        return view('restaurant',
-            ['first_article' => Database::get_article_by_id(100)]);
-    }
+       return view('rastaurant', ['atricle' => array(
+            Database::get_article_by_id(100))]);
+            }
 
-    public function showArray() {
-        return view('array', ['array' => array()]);
-        //return view('array', ['array' => array('hi', 'user,', 'nice', 'php', 'code!')]);
-    }
        
 }
